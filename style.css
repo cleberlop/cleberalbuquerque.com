@@ -17,7 +17,7 @@ border:none;
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   /*border: 2px solid red;*/
   background: rgba(4, 4, 4, 0.6);
   color: white;
@@ -112,7 +112,7 @@ border: 2px solid white;
 .frase {
   display: flex;
   border: 1px solid white;
-  height: 16vh;
+  height: 14vh;
   width: 28vw;
   align-items: center;
   justify-content: center;
@@ -153,6 +153,7 @@ border: 2px solid white;
     font-family: 'Oswald', sans-serif;
     background-color: rgb(88, 88, 85) ;
     line-height: 1.3em;
+
   }
 .page2 h3 span{
 
