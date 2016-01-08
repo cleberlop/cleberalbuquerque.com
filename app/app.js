@@ -1,13 +1,18 @@
-var app = angular.module('nbaRoutes', ['ui.router']);
+var app = angular.module('mySite', ['ui.router']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
     .state('home', {
-      templateUrl: 'js/home/homeT.html',
+      templateUrl: 'app/home/homeT.html',
       controller: 'homeCtrl',
-      url: '/home'
+      url: '/home/:scrollTo'
     })
+    // .state('profile', {
+    //   templateUrl: 'app/home/homeT.html',
+    //   controller: 'homeCtrl',
+    //   url: '/profile/:scrollTo',
+    // })
     .state('blog', {
       templateUrl: 'app/blog/blogT.html',
       controller: 'blogCtrl',
@@ -21,4 +26,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/home');
 
-});
+})
+  .run(function($rootScope, $location, $anchorScroll, $stateParams, $timeout) {
+    $rootScope.$on('$stateChangeSuccess', function(newRoute, oldRoute) {
+      $timeout(function() {
+        $location.hash($stateParams.scrollTo);
+        $anchorScroll();
+      }, 100);
+    });
+  });
