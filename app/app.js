@@ -1,4 +1,4 @@
-var app = angular.module('mySite', ['ui.router']);
+var app = angular.module('mySite', ['ui.router', 'ngAnimate']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -6,13 +6,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('home', {
       templateUrl: 'app/home/homeT.html',
       controller: 'homeCtrl',
-      url: '/home/:scrollTo'
+      url: '/home'
     })
-    // .state('profile', {
-    //   templateUrl: 'app/home/homeT.html',
-    //   controller: 'homeCtrl',
-    //   url: '/profile/:scrollTo',
-    // })
     .state('blog', {
       templateUrl: 'app/blog/blogT.html',
       controller: 'blogCtrl',
@@ -26,12 +21,4 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/home');
 
-})
-  .run(function($rootScope, $location, $anchorScroll, $stateParams, $timeout) {
-    $rootScope.$on('$stateChangeSuccess', function(newRoute, oldRoute) {
-      $timeout(function() {
-        $location.hash($stateParams.scrollTo);
-        $anchorScroll();
-      }, 100);
-    });
-  });
+});
