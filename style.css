@@ -201,19 +201,6 @@ l
   border-radius: 3px;
 
 }
-/*.socialMedia{
-  position: relative;
-  display: inline-block;
-  max-height: 9vh;
-  width: 100vw;
-}
-.socialMedia i {
-  float: right;
-  top: -10px;
-  right: 7vw;
-  background: transparent;
-  color: rgb(81, 86, 87);
-}*/
 .p2Content {
   position: relative;
   top: 5vh;
@@ -537,8 +524,10 @@ l
 }
 #proj1:hover {
   display: flex;
-  background:url('img/icons/jquery.png');
-  width: 40%;
+  background:white;
+  border: 5px solid rgb(187, 187, 187);
+  padding: 40px;
+  width: 40%;  width: 40%;
   height: 30vh;
   transition: 0.5s ease all;
 }
@@ -551,7 +540,7 @@ l
 }
 
 #proj1:hover p:after {
-  content:'Hello world 2';
+  content:'This is a Personal Portfolio Website. I built this website in 3 days.';
   font-size: 1rem;
   color: black;
   word-wrap: break-word;
@@ -565,8 +554,10 @@ l
 }
 #proj2:hover {
   display: flex;
-  background:url('img/icons/jquery.png');
-  width: 40%;
+  background:white;
+  border: 5px solid rgb(187, 187, 187);
+  padding: 40px;
+  width: 40%;  width: 40%;
   height: 30vh;
   transition: 0.5s ease all;
 }
@@ -579,10 +570,11 @@ l
 }
 
 #proj2:hover p:after {
-  content:'Hello world 2';
+  content:'This is a Personal Project that I built in two weeks during a coding bootcamp at DevMountain';
   font-size: 1rem;
   color: black;
   word-wrap: break-word;
+
 }
 #proj3 {
   display: flex;
@@ -592,7 +584,9 @@ l
 }
 #proj3:hover {
   display: flex;
-  background:url('img/icons/jquery.png');
+  background:white;
+  border: 5px solid rgb(187, 187, 187);
+  padding: 40px;
   width: 40%;
   height: 30vh;
   transition: 0.5s ease all;
@@ -606,14 +600,142 @@ l
 }
 
 #proj3:hover p:after {
-  content:'Hello world 2';
+  content:'This is a group project done at DevMountain.';
   font-size: 1rem;
   color: black;
   word-wrap: break-word;
 
 }
-
-
 .p4Footer {
   height: 0rem;
+}
+.page5 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1002;
+  background: rgb(81, 86, 87);
+}
+.page5-intro {
+  position: relative;
+  top: 23px;
+  height: 155px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page5 i {
+  position: relative;
+  top: 0.5vh;
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  background: rgba(203, 203, 203, 0.65);
+  text-align: center;
+}
+.page5 h3 {
+  position: relative;
+  top: 1.5vh;
+  color: white;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+  background-color: rgb(81, 86, 87);
+  line-height: 1.3em;
+  letter-spacing: 1px;
+
+}
+.page5 h3 span {
+  position: relative;
+  color: rgb(81, 86, 87);
+  background-color: white;
+  border-radius: 3px;
+}
+
+.p5Content {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height:60vh;
+  top: 2vh;
+  /*border: 3px solid red;*/
+  background:rgb(81, 86, 87);
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+.p5Desc {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  right: 5rem;
+  height: 15%;
+  width: 100%;
+  /*border: 3px solid green;*/
+}
+.p5Desc h5 {
+  position: relative;
+  top: 3vh;
+  text-align: center;
+  font-size: 1.2em;
+  /*border: 3px solid green;*/
+  color: rgb(178, 178, 180);
+}
+.socialMedia{
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-self: flex-end;
+  right: 22.6vw;
+  max-height: 9vh;
+  width: 24vw;
+}
+.socialMedia i {
+  letter-spacing: -3rem;
+  background: transparent;
+  color: white;
+}
+.p5Inputs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  width: 50vw;
+}
+.p5Inputs input {
+border: 1px solid rgb(167, 167, 167);
+font-family: 'Oswald', sans-serif;
+font-size: 0.9rem;
+
+}
+.p5Inputs textarea {
+  border: 1px solid rgb(167, 167, 167);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+#contName {
+  height: 9vh;
+  text-indent: 0.3em;
+
+}
+#contEmail {
+  height: 9vh;
+  text-indent: 0.3em;
+
+}
+#contMessage {
+  height: 30vh;
+  text-indent: 0.3em;
+
+}
+
+
+
+
+
+.p5Footer {
+  height: 6em;
 }
