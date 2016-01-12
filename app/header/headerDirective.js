@@ -8,8 +8,11 @@ angular.module('mySite').directive('headerDirective', function() {
           if ($('#profileButton').is(":focus")) {
             $scope.scrollToPlace('#pp2');
           }
-          else if ($('#profileButton').is(":focus")) {
+          else if ($('#skillsButton').is(":focus")) {
             $scope.scrollToPlace('#pp3');
+          }
+          else if ($('#portfolioButton').is(":focus")) {
+            $scope.scrollToPlace('#pp4');
           }
         }
       });
