@@ -17,6 +17,9 @@ angular.module('mySite').directive('headerDirective', function() {
           else if ($('#contactButton').is(":focus")) {
             $scope.scrollToPlace('#pp5');
           }
+          else if ($('#contactButton').is(":focus")) {
+            $scope.scrollToPlace('#pp6');
+          }
         }
       });
       $scope.scrollToPlace = function(targetId) {
