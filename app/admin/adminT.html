@@ -1,3 +1,7 @@
-<input ng-model="post.title" type="text" name="name" value="">
-<textarea ng-model="post.text" name="name" rows="8" cols="40"></textarea>
-<input ng-click="addPost()" type="button" name="name" value="Send">
+<div class="adminBackground">
+  <div class="adminInputs">
+      <input id="adminTitle"ng-model="post.title" type="text" name="name" placeholder="Title">
+      <textarea id="adminText" ng-model="post.text" placeholder="Post" rows="8" cols="40"></textarea>
+      <input id="adminButton" ng-click="addPost()" type="button" name="name" value="Send">
+  </div>
+</div>

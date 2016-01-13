@@ -1,11 +1,15 @@
 <div id="pp6" class="blogPage">
 <div class="topImageBlog"></div>
-</div>
-<div id="blankBackground">
-  <div class="blogPosts" ng-repeat="post in posts">
 
-    {{post.title}}
-    {{post.text}}
+<div id="blankBackground">
+  <div class="blogPosts">
+
+    <div class="singlePost" ng-repeat="post in posts">
+      <h3 class="titlePosts">{{post.title}}</h3>
+      <br>
+      <p class="paragPosts">{{post.text}}</p>
+      <br>
+    </div>
 
 
   </div>

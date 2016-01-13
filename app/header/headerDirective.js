@@ -4,8 +4,11 @@ angular.module('mySite').directive('headerDirective', function() {
     controller: function($scope, $rootScope) {
 
       $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-        if(toState.name === 'home') {
-          if ($('#profileButton').is(":focus")) {
+        if(toState.name === 'home' || toState.name === 'blog'|| toState.name === 'admin') {
+          if ($('#homeButton').is(":focus")) {
+            $scope.scrollToPlace('#pp1');
+          }
+          else if ($('#profileButton').is(":focus")) {
             $scope.scrollToPlace('#pp2');
           }
           else if ($('#skillsButton').is(":focus")) {
@@ -17,11 +20,13 @@ angular.module('mySite').directive('headerDirective', function() {
           else if ($('#contactButton').is(":focus")) {
             $scope.scrollToPlace('#pp5');
           }
-          else if ($('#contactButton').is(":focus")) {
+          else if ($('#blogButton').is(":focus")) {
             $scope.scrollToPlace('#pp6');
           }
         }
       });
+
+
       $scope.scrollToPlace = function(targetId) {
         var target = $(targetId);
         $('html,body').animate({
