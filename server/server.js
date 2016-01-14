@@ -3,7 +3,7 @@ var app = express();
 
 app.use(express.static(__dirname+'/../public'));
 
-var port = 10500;
+var port = 80;
 app.listen(port, function() {
-  console.log('Listening on port 10500');
+  console.log('Listening on port 80');
 });
