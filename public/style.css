@@ -85,6 +85,18 @@ html {
   left: 4vw;
   text-shadow: 1px 0px 0px black;
 }
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3){
+  .siteTitle {
+    font-size: 1em;
+  }
+  .mainMenu {
+    font-size: 0.5em;
+  }
+
+}
 .siteTitle a {
   text-decoration: none;
 }
@@ -200,45 +212,45 @@ html {
 .p2Content {
   position: relative;
   top: 5vh;
+  width: 100vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  padding: 60px;
 }
+
+
 .p2Left {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 35%;
-  height: auto;
-  min-height: 70vh;
-  max-height: 100vh;
+  align-content: center;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  border: 3px solid green;
 }
-.p2Left img {
-  position: absolute;
-  left: 10vw;
-  top: 8vh;;
-  width: 260px;
-  height: 260px;
+#profileLeft {
+  padding-right: 50px;
+}
+
+#profileP {
+  justify-content: center;
+  text-align: justify;
+  line-height: 1.5em;
+  max-width: 25rem;
+
+}
+#profilePicture {
+  position: relative;;
+  width: 15rem;
+  height: 15rem;
   border-radius: 10px;
 }
-.p2Right {
-  position: relative;
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  right: 8vw;
-  padding: 0px 0px 90px 200px;
-  width: 65%;
-  height: auto;
-  min-height: 70vh;
-  max-height: 100vh;
-  overflow: auto;
-  font-family: 'Oswald', sans-serif;
+#ProfileDescSpan{
   text-align: center;
-  letter-spacing: 1px;
-  line-height: 2em;
-  text-align: justify;
 }
 .p2Footer {
   position: relative;
@@ -331,7 +343,9 @@ html {
   position: relative;
   display: flex;
   width: 20%;
+  font-size: 0.7em;
   height: 25vh;
+  max-height: 20vw;
   border: 2px solid white;
   align-items: center;
   justify-content: center;
