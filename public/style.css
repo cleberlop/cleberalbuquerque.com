@@ -424,7 +424,8 @@ html {
 
 .page4 {
   position: relative;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   width: 100%;
   z-index: 1002;
   background: white;
@@ -474,7 +475,8 @@ html {
   display: flex;
   flex-flow: column;
   align-items: center;
-  height:100vh;
+  height: auto;
+  min-height:100vh;
   top: 2vh;
   /*border: 3px solid red;*/
   background:white;
@@ -501,18 +503,33 @@ html {
   position: relative;
   top: 1vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;;
   flex-wrap: wrap;
-  height: 75%;
+  height: auto;
+  min-height: 75%;
   width: 90%;
+}
+.portfolioTitle {
+  font-size: 1.3em;
+}
+.portfolioPiece {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border-radius: 5px;
+  background: white;
 }
 .projChar{
   position: relative;
   display: flex;
-  width: 30%;
-  height: 25vh;
-  border: 2px solid white;
+  width: 70%;
+  height: 50vh;
+  margin: 50px;
+  border: 1px solid grey;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -524,7 +541,6 @@ html {
 }
 .projChar:hover {
   background: white;
-  top: -10px;
   border: 5px solid rgb(50, 50, 50);
   /*transition-property: background;
   transition-duration: 1s;
@@ -540,11 +556,8 @@ html {
 #proj1:hover {
   display: flex;
   background:white;
-  border: 5px solid rgb(187, 187, 187);
+  border: 2px solid rgb(187, 187, 187);
   padding: 40px;
-  width: 40%;  width: 40%;
-  height: 30vh;
-  transition: 0.5s ease all;
 }
 #proj1 p {
   display: none;
@@ -555,9 +568,9 @@ html {
 }
 
 #proj1:hover p:after {
-  content:'This is a Personal Project that I built in two weeks during a coding bootcamp at DevMountain';
+  content:'Utah Anglers Club is a Personal Project that I built in two weeks during a coding bootcamp at DevMountain';
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   text-align: justify;
   color: black;
   word-wrap: break-word;
@@ -572,11 +585,8 @@ html {
 #proj2:hover {
   display: flex;
   background:white;
-  border: 5px solid rgb(187, 187, 187);
+  border: 2px solid rgb(187, 187, 187);
   padding: 40px;
-  width: 40%;  width: 40%;
-  height: 30vh;
-  transition: 0.5s ease all;
 }
 #proj2 p {
   display: none;
@@ -587,9 +597,9 @@ html {
 }
 
 #proj2:hover p:after {
-  content:'This is a group project done at DevMountain.';
+  content:'Waitr is a mobile app that I built with a team.';
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   text-align: justify;
   color: black;
   word-wrap: break-word;
@@ -604,11 +614,8 @@ html {
 #proj3:hover {
   display: flex;
   background:white;
-  border: 5px solid rgb(187, 187, 187);
+  border: 2px solid rgb(187, 187, 187);
   padding: 40px;
-  width: 40%;
-  height: 30vh;
-  transition: 0.5s ease all;
 }
 #proj3 p {
   display: none;
@@ -621,7 +628,7 @@ html {
 #proj3:hover p:after {
   content:'This is a Personal Portfolio Website. I built this website in 3 days.';
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   text-align: justify;
   color: black;
   word-wrap: break-word;
