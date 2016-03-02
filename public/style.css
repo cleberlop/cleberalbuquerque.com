@@ -202,6 +202,7 @@ html {
   top: 5vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .p2Left {
   position: relative;
@@ -518,7 +519,7 @@ html {
 }
 #proj1 {
   display: flex;
-  background:url('img/portfoliosnap.png');
+  background:url('img/utahAnglers.png');
   background-size: cover;
   text-decoration: none;
 }
@@ -540,7 +541,7 @@ html {
 }
 
 #proj1:hover p:after {
-  content:'This is a Personal Portfolio Website. I built this website in 3 days.';
+  content:'This is a Personal Project that I built in two weeks during a coding bootcamp at DevMountain';
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
@@ -550,7 +551,7 @@ html {
 }
 #proj2 {
   display: flex;
-  background:url('img/portfoliosnap.png');
+  background:url('img/waitr.png');
   background-size: cover;
   text-decoration: none;
 }
@@ -572,7 +573,7 @@ html {
 }
 
 #proj2:hover p:after {
-  content:'This is a Personal Project that I built in two weeks during a coding bootcamp at DevMountain';
+  content:'This is a group project done at DevMountain.';
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
@@ -604,7 +605,7 @@ html {
 }
 
 #proj3:hover p:after {
-  content:'This is a group project done at DevMountain.';
+  content:'This is a Personal Portfolio Website. I built this website in 3 days.';
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
