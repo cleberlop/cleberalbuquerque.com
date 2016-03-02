@@ -26,7 +26,7 @@ app.post('/api/sendemail', function(req, res) {
 });
 
 
-var port = 3000;
+var port = 80;
 app.listen(port, function() {
   console.log('Listening on port ' + port);
 });
