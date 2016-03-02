@@ -18,8 +18,8 @@
             <img id="profilePicture" src="img/profilepic.jpg" alt= />
           </div>
             <p id="profileP">
-              <span id="ProfileDescSpan">Hi! My name is Cleber Albuquerque.</span><br>
-              I'm a  Full Stack WEB DEVELOPER and I design modern reponsive web applications.
+              H<span>i!</span> My name is Cleber Albuquerque.<br>
+              I'm a  Full Stack Web Developer and I design modern reponsive web applications.
               I live in Eagle Mountain, Utah, and on my free time I like to fly-fish and code.
               I speak fluent English, Portuguese and Spanish.
               Check out my portfolio.
@@ -95,12 +95,12 @@
           <h3><span>&nbspGET&nbsp</span> IN TOUCH</h3>
       </div>
       <div  class="p5Content">
-            <div class="p5Inputs">
-              <input id="contName" type="text" name="name" placeholder="Name">
-              <input id="contEmail" type="text" name="email" placeholder="Email">
-              <textarea id="contMessage" rows="8" cols="40" placeholder="Message"></textarea>
-              <input id="contButton" type="submit" value="Send" />
-            </div>
+            <form  name="sendEmainForm" class="p5Inputs">
+              <input id="contName" type="text" name="name" placeholder="Name" ng-model="email.name">
+              <input id="contEmail" type="text" name="email" placeholder="Email" ng-model="email.email">
+              <textarea id="contMessage" rows="8" cols="40" placeholder="Message"ng-model="email.message"></textarea>
+              <input id="contButton" type="submit" value="Send" ng-click="sendEmail(email)" />
+            </form>
             <div class="socialMedia">
               <a href="https://github.com/cleberlop"><i class="fa fa-github-square fa-2x"></i></a>
               <a href="https://www.linkedin.com/in/cleber-albuquerque-49721638"><i class="fa fa-linkedin-square fa-2x"></i></a>

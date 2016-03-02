@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/cleberlop/cleberalbuquerque.com#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "^1.15.0",
+    "express": "^4.13.3",
+    "sendgrid": "^2.0.0"
   }
 }
