@@ -963,6 +963,7 @@ font-size: 0.9rem;
    }
    #profileP span {
      letter-spacing: 3px;
+     font-family: 'Oswald', sans-serif;
    }
    #profilePicture {
      position: relative;
