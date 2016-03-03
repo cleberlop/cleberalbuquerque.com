@@ -234,6 +234,7 @@ html {
 }
 #profileP span {
   letter-spacing: 3px;
+  font-family: 'Oswald', sans-serif;
 }
 #profilePicture {
   position: relative;;
@@ -1042,10 +1043,12 @@ font-size: 0.9rem;
 
    }
    #contButton {
-     position: relative;
      width: 15vw;
      height: 2vh;
      top: 0.4rem;
+     color:rgb(112, 112, 112);
+     background-color: white;
+     cursor: pointer;
    }
    .page1 {
      margin-bottom: 100px;
