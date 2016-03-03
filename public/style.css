@@ -232,10 +232,6 @@ html {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1.3px;
 }
-#profileP span {
-  letter-spacing: 3px;
-  font-family: 'Oswald', sans-serif;
-}
 #profilePicture {
   position: relative;;
   width: 15rem;
@@ -960,10 +956,6 @@ font-size: 0.9rem;
      font-family: 'Oswald', sans-serif;
      min-width: 800px;
      margin-bottom: 200px;
-   }
-   #profileP span {
-     letter-spacing: 3px;
-     font-family: 'Oswald', sans-serif;
    }
    #profilePicture {
      position: relative;
