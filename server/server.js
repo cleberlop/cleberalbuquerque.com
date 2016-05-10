@@ -1,7 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var config = require('./config/config');
-var sendgrid  = require('sendgrid')(config.emailKey);
+var sendgrid  = require('sendgrid')(process.env.SENDGRIDKEY);
 var app = express();
 
 
@@ -13,7 +12,7 @@ app.post('/api/sendemail', function(req, res) {
   console.log('received', req.body);
   var emailBody = req.body;
   var email     = new sendgrid.Email({
-    to:       config.email,
+    to:       process.env.EMAIL,
     from:     'cleberalbuquerque.com',
     subject:  'Email from cleberalbuquerque.com',
     text:    'Name: ' + emailBody.name + ', email: ' + emailBody.email + ', message: ' + emailBody.message
@@ -26,7 +25,7 @@ app.post('/api/sendemail', function(req, res) {
 });
 
 
-var port = 80;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('Listening on port ' + port);
 });
